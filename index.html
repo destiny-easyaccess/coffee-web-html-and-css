@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="font-awesome.css" />
+  </head>
+  <body>
+    <div id="modal-main" class="popup-modal">
+      <i id="close-icon" class="fa fa-times cancle"></i>
+      <div class="form-container">
+        <div class="buttons">
+          <div class="toggle-slider"></div>
+          <button type="button" id="auth-toggle-log" class="auth-toggle">
+            Login
+          </button>
+          <button type="button" id="auth-toggle-reg" class="auth-toggle">
+            Register
+          </button>
+        </div>
+        <div class="slider">
+          <img src="images/coffee logo2.png" />
+          <form id="login-form">
+            <h3>LOGIN FORM</h3>
+            <div class="input-fields">
+              <input
+                type="text"
+                name="username"
+                placeholder="Enter your username"
+              />
+              <i class="fa fa-user"></i>
+            </div>
+
+            <div class="input-fields">
+              <input
+                id="passinput"
+                type="password"
+                name="password1"
+                placeholder="Enter your password"
+              />
+              <i class="fa fa-lock"></i>
+              <i class="fa fa-eye-slash" id="password-invisible"></i>
+              <i class="fa fa-eye" id="password-visible"></i>
+            </div>
+
+            <div class="checkbox-content">
+              <div class="checkbox-main">
+                <input type="checkbox" id="check" name="checkbox" />
+                <label for="check">Remember me</label>
+              </div>
+              <a href="password-rest.html">Forgot Password ?</a>
+            </div>
+            <div class="button">
+              <input type="submit" name="submit" value="Login" />
+              <a href=""></a>
+            </div>
+
+            <div class="checkbox-content">
+              <a>Not a Memeber ?</a>
+            </div>
+          </form>
+          <form id="register-form">
+            <h3>Register FORM</h3>
+            <div class="input-fields">
+              <input
+                type="text"
+                name="username"
+                placeholder="Enter your username"
+              />
+              <i class="fa fa-user"></i>
+            </div>
+
+            <div class="input-fields">
+              <input
+                id="passinput"
+                type="password"
+                name="password1"
+                placeholder="Enter your password"
+              />
+              <i class="fa fa-lock"></i>
+              <i class="fa fa-eye-slash" id="password-invisible"></i>
+              <i class="fa fa-eye" id="password-visible"></i>
+            </div>
+
+            <div class="checkbox-content">
+              <div class="checkbox-main">
+                <input type="checkbox" id="check" name="checkbox" />
+                <label for="check">Remember me</label>
+              </div>
+              <a href="password-rest.html">Forgot Password ?</a>
+            </div>
+            <div class="button">
+              <input type="submit" name="submit" value="Login" />
+              <a href=""></a>
+            </div>
+
+            <div class="checkbox-content">
+              <a>Not a Memeber ?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header class="nav">
+      <div class="overlay">
+        <div class="wrapper">
+          <img src="/images/coffee logo.png" alt="" />
+          <nav id="first-nav" class="nav-first">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="">Service</a></li>
+            </ul>
+          </nav>
+          <nav class="nav-last">
+            <ul>
+              <li id="open-icon"><a>Get Started</a></li>
+              <li id="cart-icon">
+                <a class="fa fa-shopping-cart"></a>
+              </li>
+              <li id="nav-bar"><i class="fa fa-bars"></i></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <aside id="maincart" class="cart">
+      <div class="wrapper">
+        <div class="items">
+          <div class="content">
+            <table>
+              <thead>
+                <th></th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="/images/menu-1.jpg" alt="" /></td>
+                  <td>Americano</td>
+                  <td>$20</td>
+                  <td>
+                    <div class="qty">
+                      <i class="fa fa-chevron-up"></i>
+                      1
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                  </td>
+                  <td>$20</td>
+                </tr>
+                <tr>
+                  <td><img src="/images/menu-3.jpg" alt="" /></td>
+                  <td>Coffee milk</td>
+                  <td>$20</td>
+                  <td>
+                    <div class="qty">
+                      <i class="fa fa-chevron-up"></i>
+                      1
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                  </td>
+                  <td>$20</td>
+                </tr>
+                <tr>
+                  <td><img src="/images/menu-2.jpg" alt="" /></td>
+                  <td>Coffee</td>
+                  <td>$200</td>
+                  <td>
+                    <div class="qty">
+                      <i class="fa fa-chevron-up"></i>
+                      20
+                      <i class="fa fa-chevron-down"></i>
+                    </div>
+                  </td>
+                  <td>$20</td>
+                </tr>
+              </tbody>
+            </table>
+            <button>Checkout</button>
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- home sction -->
+    <section id="home" class="home">
+      <div class="overlay">
+        <div class="wrapper">
+          <div class="container">
+            <h2>Give's You That Sweet Taste</h2>
+            <p>Feel the tast of our premiuer coffee</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu and abt section -->
+    <section class="menu-abt">
+      <!-- about section -->
+      <section id="about" class="about">
+        <div class="wrapper grid-container">
+          <div class="text-container">
+            <div class="header">
+              <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <span>Lorem ipsum dolor sit amet consectetur, adipisicing </span>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus vero
+            nihil, aut quidem velit officiis eveniet eum tempore nostrum rem
+            illum delectus voluptate reiciendis, nemo modi mollitia eligendi
+            dolorem! Nulla.
+          </div>
+          <div class="image-container">
+            <div class="img-single" id="img1">
+              <img src="/images/table.jpg" alt="" />
+            </div>
+            <div class="img-single" id="img2">
+              <img src="/images/pexels-valeriia-miller-3361170.jpg" />
+            </div>
+            <div class="img-single" id="img3">
+              <img src="/images/mike-kenneally-TD4DBagg2wE-unsplash.jpg" alt=""
+            </div>
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu">
+        <div class="overlay">
+          <div class="wrapper">
+            <div class="header">
+              <h3>Menu and Pricing</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="content">
+              <div class="single-wrapper">
+                <div class="circle-img">
+                  <img src="/images/menu-1.jpg" />
+                  <p>Black Coffee</p>
+                </div>
+                <div class="single">
+                  <div class="abs-cont"><p>$20</p></div>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam blanditiis libero eveniet mollitia <br />
+                  <button>
+                    <i class="fa fa-shopping-cart"></i> &nbsp; Add to Cart
+                  </button>
+                </div>
+              </div>
+              <div class="single-wrapper">
+                <div class="circle-img">
+                  <img src="/images/menu-2.jpg" alt="" />
+                  <p>Chocolate Coffee</p>
+                </div>
+                <div class="single">
+                  <div class="abs-cont"><p>$20</p></div>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam blanditiis libero eveniet mollitia <br />
+                  <button>
+                    <i class="fa fa-shopping-cart"></i> &nbsp; Add to Cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="single-wrapper">
+                <div class="circle-img">
+                  <img src="/images/menu-3.jpg" alt="" />
+                  <p>Coffee with Milk</p>
+                </div>
+                <div class="single">
+                  <div class="abs-cont"><p>$20</p></div>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam blanditiis libero eveniet mollitia <br />
+                  <button>
+                    <i class="fa fa-shopping-cart"></i> &nbsp; Add to Cart
+                  </button>
+                </div>
+              </div>
+
+              <div class="single-wrapper">
+                <div class="circle-img">
+                  <img src="/images/service-1.jpg" alt="" />
+                  <p>Americano</p>
+                </div>
+                <div class="single">
+                  <div class="abs-cont"><p>$20</p></div>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ullam blanditiis libero eveniet mollitia <br />
+                  <button>
+                    <i class="fa fa-shopping-cart"></i> &nbsp; Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="promo">
+      <div class="wrapper">
+        <div class="grid-container">
+          <div class="promo-cont">
+            <h1>80% OFF</h1>
+            <h4>Sunday Special Offer</h4>
+            <p>Valid for 2nd of october to 23rd of December</p>
+          </div>
+          <div class="form-cont">
+            <form action="">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" id="" />
+              <input type="select" placeholder="Space" id="" />
+              <input type="date" />
+              <button>Book</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="overlay">
+        <div class="wrapper">
+          <div class="col first">
+            <div class="content">
+              <h4>Get Intouch</h4>
+              <ul>
+                <li><span>Address:</span> 246B central cresent, omahlay</li>
+                <li><span>Phone Number:</span> +2323994009</li>
+                <li><span>Email:</span> lugarddestiny1999@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col second">
+            <div class="content">
+              <h4>Opening Hours</h4>
+              <ul>
+                <li>Monday to Friday <span>6:00am - 6:00pm</span></li>
+                <li>Saturday<span>10:00am - 4:00pm</span></li>
+                <li>Sunday <span>12:00pm - 4:00pm</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col second">
+            <div class="content">
+              <h4>Menu</h4>
+              <ul>
+                <li>Americano<span>$20</span></li>
+                <li>Black Coffee<span>$14</span></li>
+                <li>Coffee with Milk <span>$24</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Copywrite coffeeking @2022</div>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>
